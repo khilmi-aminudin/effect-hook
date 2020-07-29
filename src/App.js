@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+// import ComponentC from './components/ComponentC';
+import HookMouse from './components/HookMouse';
+import MouseContainer from './components/MouseContainer';
+
+export const userContext = React.createContext()
+export const channelContext = React.createContext()
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <userContext.Provider value={'Khilmi Aminudin'}>
+        <channelContext.Provider value='Codevolution'>
+          <ComponentC/>
+        </channelContext.Provider>
+      </userContext.Provider>   */}
+      {/* <HookMouse/> */}
+      <MouseContainer/>
     </div>
   );
 }
